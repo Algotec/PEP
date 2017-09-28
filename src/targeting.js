@@ -75,7 +75,7 @@ export default {
   },
   findTarget: function(inEvent) {
     var x = inEvent.clientX;
-    var y = (inEvent.clientY < 0) ? inEvent.pageY : inEvent.clientY;
+    var y = inEvent.clientY;
 
     // if the listener is in the shadow root, it is much faster to start there
     var s = this.owner(inEvent.target);
